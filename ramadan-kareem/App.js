@@ -6,6 +6,7 @@ import { Searchbar } from 'react-native-paper';
 import styled from 'styled-components/native';
 import { Search } from './components/search.component'
 import * as Location from 'expo-location';
+import { MosqueCard } from './components/mosque-card.component';
 
 
 
@@ -54,6 +55,8 @@ export default function App() {
             title="Mosque"
           />
         </MapView>
+        <MosqueCard />
+        
       </View>
     </PaperProvider>
   );
@@ -66,8 +69,5 @@ const styles = StyleSheet.create({
   map: {
     width: '100%',
     height: '100%',
-  },
-  searchbar : {
-    marginTop : 150
   }
 });
