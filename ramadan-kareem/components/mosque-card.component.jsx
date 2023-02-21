@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components/native';
-import { StyleSheet, View , Text } from 'react-native';
+import { StyleSheet, View , Text, ScrollView } from 'react-native';
 import { useFonts } from 'expo-font';
 import Ionicons from '@expo/vector-icons/Ionicons';
 
@@ -42,21 +42,21 @@ export const MosqueCard = () => {
   }
 
   return (
-    <CardContainer>
-      <View style={styles.layout}>
-        <MyImage source={{  uri : 'https://exploreparis.com/7788/great-mosque-of-paris-virtual-conference.jpg'}} />
-        <Text style={styles.text}>Jamaa Sunah</Text>
-      </View>
-      <Text style={styles.status}>Status : Available</Text>
-      <Text style={styles.status}>Rating : 4.5</Text>
-      <View style={styles.layout}>
-        <Ionicons name="star" size={22} color="white" />
-        <Ionicons name="star" size={22} color="white" />
-        <Ionicons name="star" size={22} color="white" />
-        <Ionicons name="star" size={22} color="white" />
-        <Ionicons name="star" size={22} color="white" />
-      </View>
-    </CardContainer>
+      <CardContainer>
+        <View style={styles.layout}>
+          <MyImage source={{  uri : 'https://exploreparis.com/7788/great-mosque-of-paris-virtual-conference.jpg'}} />
+          <Text style={styles.text}>Jamaa Sunah</Text>
+        </View>
+        <Text style={styles.status}>Status : Available</Text>
+        <Text style={styles.status}>Rating : 4.5</Text>
+        <View style={styles.layout}>
+          <Ionicons name="star" size={22} color="white" />
+          <Ionicons name="star" size={22} color="white" />
+          <Ionicons name="star" size={22} color="white" />
+          <Ionicons name="star" size={22} color="white" />
+          <Ionicons name="star" size={22} color="white" />
+        </View>
+      </CardContainer>
   )
 }
 
